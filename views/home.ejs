@@ -1,0 +1,32 @@
+<%- include("./partials/header") -%>
+
+<h1 class="section-header">Home Introduction</h1>
+<p STYLE="margin-bottom: 50px"><%= HomeBannerContent %></p>
+<h1 class="section-header">Posts Published</h1>
+<% if (NumberOfPosts > 0) {%>
+    <% for (var i = 0; i < NumberOfPosts; i++){%>
+        <div class="post-container">
+            <a href="./post/<%= i %>"><h3 class="post-header"><%= Posts[i].Title%></h2></a>
+            <p class="post-content"><%= Posts[i].Content%></p>
+            <a class="show-more" href="./post/<%= i %>">Show More</a>
+        </div>
+    <% }%>
+<% } else {%>
+        <div class="post-container no-post no-post-container">
+            <p class="post-content no-post">There is no post published at the moment...</p>
+            <form action="./compose">
+                <button type="submit" class="compose-submit-btn btn no-post-btn">Compose a post</button>
+            </form>
+        </div>
+    <% }%>
+<script>
+    function showLessText(maxLength){
+        var elementText = $(".post-content").text();
+        if(elementText.length > maxLength){
+            elementText = elementText.substr(0, maxLength) + "...";
+        }
+        return elementText;
+    }
+    $(".post-content").text (showLessText(300));
+</script>
+<%- include("./partials/footer") -%>

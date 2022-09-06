@@ -1,0 +1,141 @@
+html, body{
+    height: 100%;
+}
+.container{
+    min-height: 100%;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #A084CA;
+}
+
+.footer-padding {
+	padding-bottom: 30px;
+}
+
+.footer {
+	position: relative;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #A084CA;
+}
+
+.footer p {
+    margin-top: 25px;
+	font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    top: 18px;
+}
+
+
+/* New CSS added */
+.newPostDescription{
+    display: block;
+    margin-top: 8px;
+    width: 100%;
+}
+.newPostTitle{
+    display: block;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.compose-submit-btn{
+    background-color: #A084CA;
+    display: block;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.compose-submit-btn:hover{
+    background-color: #BFACE0;
+    color: white;
+}
+.form-label{
+    display: block;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.form-container{
+    width: 100%;
+}
+
+.post-content{
+    font-size: 13px;
+    color: #413F42;
+    font-style: italic;
+}
+.post-header{
+    font-size: 20px;
+    color: #A084CA;
+    font-weight: bold;
+}
+.post-header:hover{
+    color: #BFACE0;
+}
+
+.post-container{
+    background-color: #FDF6F0;
+    padding: 15px 20px 20px 20px;
+    border-radius: 7px;
+    margin: 20px 0;
+}
+.no-post-container{    
+    min-height: 300px;
+}
+.no-post{
+    margin-top: 40px;
+    text-align: center;
+}
+.no-post-btn{
+    margin: 20px auto;
+}
+.show-more{
+    position: relative;
+    float:right;
+    bottom: 12px;
+    color: #A084CA;
+    font-style: italic;
+}
+.show-more:hover{
+    color: #BFACE0;
+}
+
+.section-header{
+    padding: 10px 0;
+    border-bottom: 5px solid #A084CA;
+    margin-bottom: 20px;
+}
+.end-article{
+    position: relative;
+    float: right;
+}
+#compose a{
+    background-color: #A084CA;
+    height: 100%;
+    color: white;
+    border-radius:5px;
+    font-weight: bold;
+}
+#compose a:hover{
+    color: white;
+    font-weight: bold;
+    background-color: #BFACE0;
+}
